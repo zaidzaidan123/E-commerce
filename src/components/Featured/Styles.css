@@ -1,0 +1,25 @@
+.second-page {
+  background-color: #fcfcfc;
+  padding-bottom: 10px;
+}
+
+.second-page h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.all-boxes {
+  /* margin: 28px auto 59px; */
+  padding: 0 15%;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, 263px);
+}
+@media (max-width: 400px) {
+  .all-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+}

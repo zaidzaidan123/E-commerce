@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import "./App.css";
+import React from "react";
+import AddBar from "./components/AddsBar";
+import Header from "./components/Header/List Item";
+import WelcomePage from "./components/welcome-page";
+import SecondPage from "./components/Featured";
+import AboutMatter from "./components/AboutMatter";
+import Explore from "./components/Explore";
+import Shop from "./components/Shop";
+import VediosBoxes from "./components/VediosBoxes";
+import AsSeen from "./components/AsSeenOn";
+import Footer from "./components/Footer";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AddBar />
+      <Header />
+      <WelcomePage />
+      <SecondPage />
+      <AboutMatter />
+      <Explore />
+      <Shop />
+      <VediosBoxes />
+      <AsSeen/>
+      <Footer/>
+    </>
   );
-}
+};
 
 export default App;

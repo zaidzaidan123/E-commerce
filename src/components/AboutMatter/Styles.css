@@ -1,0 +1,36 @@
+.container {
+  padding: 62px 15% 60px;
+}
+.container-2 {
+  display: flex;
+}
+.topic {
+  margin: 0 auto;
+}
+.topic h2 {
+  text-align: center;
+}
+.image-about {
+  background-image: url("/public/images/fc26b70da783a49001cf63c38ed1ad5c5044b323.png");
+  background-size: 95%;
+  background-repeat: no-repeat;
+  height: 430px;
+  width: 125%;
+}
+.words {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media (max-width: 400px) {
+  .container-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .image-about {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+  }
+}

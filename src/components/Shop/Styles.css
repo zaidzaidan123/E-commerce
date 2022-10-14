@@ -1,0 +1,17 @@
+.container-shop{
+    padding: 62px 13% 60px;
+}
+.image-shop-boxes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+@media (max-width:400px) {
+    .image-shop-boxes{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-shop{
+        padding: 62px 15% 60px;
+    }
+}

@@ -1,0 +1,9 @@
+.AddBar-container{
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

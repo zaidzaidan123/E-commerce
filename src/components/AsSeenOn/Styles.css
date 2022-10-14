@@ -1,0 +1,11 @@
+.asSeen-containaer {
+  padding: 62px 20%;
+}
+.As-seen-pic {
+    background-image: url("/public/images/07cd3f1fa1b05fc98036589db10782d230e394f7.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  width: 100%;
+  height: 43px;
+}
+
