@@ -1,0 +1,174 @@
+.description h3,
+.description h2 {
+  margin: 0;
+}
+.Title {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.closeButton {
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+.closeButton span {
+  width: 40px;
+  height: 20px;
+}
+.PicturesFlexCol {
+  display: flex;
+  flex-direction: column;
+  width: 68px;
+  height: 68px;
+}
+.PicturesFlexCol img {
+  margin: 20px 0;
+  cursor: pointer;
+}
+.ProductsContainer {
+  display: flex;
+}
+.FullPic img {
+  margin: 20px;
+  height: 600px;
+  width: 600px;
+}
+.description {
+  width: 50%;
+}
+
+.description h2 {
+  text-align: left;
+}
+.BoldDesc {
+  opacity: 1;
+  color: #030303;
+  font-family: "ProximaNova-Light";
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 40px;
+  width: 100%;
+}
+.orangePrice {
+  color: #ff6008;
+}
+.orangeBackGround {
+  border: 3px solid orange;
+}
+.description p {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  text-align: left;
+}
+.lightWords {
+  opacity: 1;
+  color: #666666;
+  font-family: "ProximaNova-Light";
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 20px;
+}
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.rating {
+  display: flex;
+}
+hr {
+  opacity: 0.2;
+}
+.buttonUnChecker {
+  border: 1px solid rgba(243, 243, 243, 1);
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 1);
+  margin-left: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.counter {
+  cursor: default;
+  margin: 0;
+  border: none;
+}
+.buttonChecker {
+  border: 1px solid #dedede;
+  background-color: #dedede;
+  margin-left: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.counter {
+  margin-right: 0px;
+}
+.buttonsLast {
+  display: flex;
+  justify-content: space-between;
+}
+.BlackButton {
+  background-color: rgba(51, 51, 58, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: "ProximaNova-Bold";
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+.wishlist {
+  display: flex;
+  justify-content: center;
+}
+.center {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width:400px) {
+  .ProductsContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .PicturesFlexCol{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+   .FullPic img{
+    width: 100%;
+    margin: 0;
+    height: 400px;
+  } 
+  .buttonsLast{
+    display: flex;
+    flex-wrap: wrap;
+  } 
+  .description{
+    width: 100%;
+  }
+  .longDesc h3{
+    margin-bottom: 20px;
+  }
+  .BlackButton{
+    margin: 10px 0 ;
+  }
+}

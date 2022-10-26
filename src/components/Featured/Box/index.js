@@ -2,7 +2,15 @@ import React from "react";
 import "./Styles.css";
 import New from "../isNew";
 import QuickView from "../button";
-const Box = ({ image, description, price, isNew }) => {
+const Box = ({
+  image,
+  description,
+  price,
+  isNew,
+  id,
+  stateModal,
+  setStateModal,
+}) => {
   return (
     <div className="box">
       <div
@@ -12,7 +20,12 @@ const Box = ({ image, description, price, isNew }) => {
         }}
       >
         <New show={isNew} />
-        <QuickView button="Quick View" />
+        <QuickView
+          button="Quick View"
+          id={id}
+          setStateModal={setStateModal}
+          stateModal={stateModal}
+        />
       </div>
       <div>
         <p>{description}</p>
