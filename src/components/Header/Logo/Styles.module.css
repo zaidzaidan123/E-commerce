@@ -1,4 +1,4 @@
- h2 {
+.logo {
     opacity: 1;
     color: rgba(82, 82, 82, 1);
     font-family: "Maven Pro", sans-serif;
@@ -6,7 +6,13 @@
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0px;
-    text-align: left;
+    text-align: center;
     line-height: 60px;
     color: #030303;
+  }
+
+  @media (max-width:400px) {
+    .logo{
+      padding-left: 10px;
+    }
   }

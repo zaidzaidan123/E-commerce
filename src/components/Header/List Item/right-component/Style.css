@@ -1,11 +1,11 @@
 .right-div {
-    width: 15%;
- display: flex;
- justify-content: space-evenly;
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
 }
-@media  (max-width:400px) {
- .right-div{
+@media (max-width: 400px) {
+  .right-div {
     display: none;
- }   
-    
+  }
+  
 }

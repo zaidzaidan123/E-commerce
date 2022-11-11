@@ -1,4 +1,5 @@
 .second-page {
+  padding-top: 20px;
   background-color: #fcfcfc;
   padding-bottom: 10px;
 }
@@ -11,11 +12,10 @@
 }
 
 .all-boxes {
-  /* margin: 28px auto 59px; */
-  padding: 0 15%;
+  padding: 0 18%;
   display: grid;
   gap: 15px;
-  grid-template-columns: repeat(4, 263px);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 @media (max-width: 400px) {
   .all-boxes {

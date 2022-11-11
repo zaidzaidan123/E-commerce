@@ -38,7 +38,7 @@ const Footer = () => {
           <h3>Subscribe to newsletter</h3>
           <div className="inputs-butt">
             <input placeholder="Enter your email" />
-            <button>Subscribe</button>
+            <button className="buttonCont">Subscribe</button>
           </div>
           <div>
           <i class="fa-brands fa-facebook"></i>

@@ -1,9 +1,9 @@
 import React from 'react'
-import "./Styles.css"
+import Style from "./Styles.module.css"
 
 const Logo = ({logo}) => {
   return (
-    <div><h2>{logo}</h2></div>
+    <div ><h2 className={Style.logo}>{logo}</h2></div>
   )
 }
 

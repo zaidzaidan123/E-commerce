@@ -17,6 +17,11 @@
   text-align: left;
   line-height: 40px;
 }
+.arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .list-items {
   display: flex;
   align-items: center;
@@ -24,7 +29,8 @@
 }
 .burgar{
   display: none;
-  padding-right:40px ;
+  padding-right:10px ;
+
 }
 .list-items div:hover,
 .list-items:hover,
@@ -41,5 +47,7 @@
   }
   .burgar{
     display: block;
+    border: none;
+    cursor: pointer;
   }
 }

@@ -38,6 +38,8 @@
   margin: 20px;
   height: 600px;
   width: 600px;
+  object-fit: fill;
+
 }
 .description {
   width: 50%;
@@ -131,6 +133,7 @@ hr {
   line-height: 20px;
   text-transform: uppercase;
   padding: 10px 20px;
+  margin-left: 40px;
 }
 .wishlist {
   display: flex;
@@ -141,34 +144,34 @@ hr {
   align-items: center;
 }
 
-@media (max-width:400px) {
-  .ProductsContainer{
+@media (max-width: 400px) {
+  .ProductsContainer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
-  .PicturesFlexCol{
+  .PicturesFlexCol {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-   .FullPic img{
+  .FullPic img {
     width: 100%;
     margin: 0;
     height: 400px;
-  } 
-  .buttonsLast{
+  }
+  .buttonsLast {
     display: flex;
     flex-wrap: wrap;
-  } 
-  .description{
+  }
+  .description {
     width: 100%;
   }
-  .longDesc h3{
+  .longDesc h3 {
     margin-bottom: 20px;
   }
-  .BlackButton{
-    margin: 10px 0 ;
+  .BlackButton {
+    margin: 10px 0;
   }
 }

@@ -263,26 +263,30 @@ const Modal = ({ id, setStateModal, StateModal }) => {
             <LightWords title="Quantity" />
             <div className={Styles.buttonsLast}>
               <div>
-              <button
-                className={Styles.buttonChecker + " " + Styles.counter}
-                onClick={handedDecreaseCounter}
-              >
-                -
-              </button>
-              <button className={Styles.buttonUnChecker + " " + Styles.counter}>
-                {counter}
-              </button>
-              <button
-                className={Styles.buttonChecker + " " + Styles.counter}
-                onClick={handedIncreaseCounter}
-              >
-                +
-              </button>
-              <button className={Styles.BlackButton}>Add To Cart</button>
+                <button
+                  className={Styles.buttonChecker + " " + Styles.counter}
+                  onClick={handedDecreaseCounter}
+                >
+                  -
+                </button>
+                <button
+                  className={Styles.buttonUnChecker + " " + Styles.counter}
+                >
+                  {counter}
+                </button>
+                <button
+                  className={Styles.buttonChecker + " " + Styles.counter}
+                  onClick={handedIncreaseCounter}
+                >
+                  +
+                </button>
+                <button className={Styles.BlackButton}>Add To Cart</button>
               </div>
               <div className={Styles.wishlist}>
-              <span  className={"material-symbols-outlined "+Styles.center}>help</span>
-              <LightWords title="Add to wishlist" />
+                <span className={"material-symbols-outlined " + Styles.center}>
+                  help
+                </span>
+                <LightWords title="Add to wishlist" />
               </div>
             </div>
           </div>
