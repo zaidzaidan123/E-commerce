@@ -3,9 +3,8 @@
   display: flex;
   justify-content: space-evenly;
 }
-@media (max-width: 400px) {
+@media (max-width: 740px) {
   .right-div {
     display: none;
   }
-  
 }

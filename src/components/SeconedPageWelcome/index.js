@@ -8,7 +8,7 @@ const SeconedWelcome = () => {
         White Gold began gaining popularity in the early 1900’s as an
         alternative to platinum.{" "}
       </p>
-      <img src="images/bce7a2a190a22802b2cf58aa91c42939b9bd5973.png" className={Style.SeconedImg}/>
+      <img src="images/bce7a2a190a22802b2cf58aa91c42939b9bd5973.png" className={Style.SeconedImg} alt="pic"/>
     </div>
   );
 };

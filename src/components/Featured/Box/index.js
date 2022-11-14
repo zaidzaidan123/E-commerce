@@ -31,7 +31,7 @@ const Box = ({
         <p>{description}</p>
       </div>
       <div>
-        <p>{price}</p>
+        <p>${price}</p>
       </div>
     </div>
   );

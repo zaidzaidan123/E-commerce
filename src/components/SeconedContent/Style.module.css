@@ -1,0 +1,96 @@
+.ContentContainer {
+  padding: 40px 14%;
+  display: flex;
+  background-color: #fcfcfc;
+  justify-content: space-around;
+}
+.leftFilter {
+  width: 20%;
+}
+.leftFilterFlex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.leftFilterFlex button {
+  border: none;
+  padding: 0;
+  color: rgba(255, 96, 8, 1);
+  font-family: "ProximaNova-Regular";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 40px;
+  text-transform: uppercase;
+  background-color: #fcfcfc;
+  cursor: pointer;
+}
+.leftFilterFlex p {
+  color: rgba(51, 51, 58, 1);
+  font-family: "ProximaNova-Regular";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.buttonFilter {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background-color: #fcfcfc;
+  text-align: left;
+}
+.boxContent {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 76px;
+  grid-row-gap: 30px;
+  margin-left: 30px;
+}
+.buttonFilter:hover {
+  color: rgba(255, 96, 8, 1);
+  background-color: aliceblue;
+}
+.sizes {
+  opacity: 1;
+  color: rgba(51, 51, 58, 1);
+  font-family: "ProximaNova-Regular";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.buttonsCheck{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 400px) {
+  .ContentContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .leftFilterFlex {
+    display: flex;
+    flex-direction: row;
+  }
+  .leftFilter {
+    width: 100%;
+  }
+  .boxContent {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 100%;
+    padding: 40px 2%;
+  }
+}

@@ -2,6 +2,7 @@
   width: 263px;
   height: 481px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .box-images {
@@ -9,6 +10,7 @@
   background-size: contain;
   position: relative;
   z-index: 0;
+  background-repeat: no-repeat;
 }
 .box-images:hover {
   opacity: 0.5;
@@ -17,4 +19,6 @@
   padding: 5px;
   outline: 5px solid white;
   background-color: white;
+  
+
 }

@@ -38,7 +38,20 @@
   color: orange;
   cursor: pointer;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+  .list-items {
+    display: none;
+  }
+  .left-div {
+    width: 100%;
+  }
+  .burgar{
+    display: block;
+    border: none;
+    cursor: pointer;
+  }
+}
+@media (max-width: 740px) {
   .list-items {
     display: none;
   }
