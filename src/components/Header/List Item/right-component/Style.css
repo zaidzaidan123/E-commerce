@@ -3,6 +3,13 @@
   display: flex;
   justify-content: space-evenly;
 }
+.right-div div{
+  cursor: pointer;
+
+}
+.cart-color{
+  color: black;
+}
 @media (max-width: 740px) {
   .right-div {
     display: none;

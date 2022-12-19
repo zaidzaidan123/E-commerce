@@ -16,9 +16,9 @@ const FilterdProductsPage = () => {
   useEffect(() => {
     getCustomersData();
   }, []);
-  useEffect(()=>{
-    setFilterData(data)
-  },[])
+  useEffect(() => {
+    setFilterData(data);
+  }, [data]);
   const [filterData, setFilterData] = useState(data);
 
   let priceData = filterData.slice();
