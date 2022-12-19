@@ -17,7 +17,6 @@ import Alert from "@mui/material/Alert";
 const ModalView = () => {
   const cartIncrease = useContext(CartContext);
   const { id } = useParams();
-  const [open, setOpen] = useState(false);
   const obj = showProducts[id - 1];
   const buttonsNumbers = [1, 2, 3, 4];
   const [indexBackGround, setIndexBackGround] = useState(0);
@@ -33,10 +32,10 @@ const ModalView = () => {
   };
   const handelCartIncrease = () => {
     cartIncrease.handelAddToCart(obj);
-    setOpen(true);
+    cartIncrease.setOpen(true);
   };
   const handleClose = () => {
-    setOpen(false);
+    cartIncrease.setOpen(false);
   };
 
   const dataArray = [
@@ -76,7 +75,7 @@ const ModalView = () => {
   return (
     <>
       <div className={Styles.pdp}>
-        <Snackbar open={open} autoHideDuration={6000} >
+        <Snackbar open={cartIncrease.open} autoHideDuration={6000} >
           <Alert
             onClose={handleClose}
             severity="success"

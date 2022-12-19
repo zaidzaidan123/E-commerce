@@ -7,6 +7,7 @@ import LayOut from "../Layut";
 import CartContext from "../../CartContext/CartContext";
 import Cart from "../../views/Cart";
 const Router = () => {
+  const [open,setOpen]=useState(false)
   const [counter, setCounter] = useState(1);
   const [cart, setCart] = useState([]);
   const handelAddToCart = (obj) => {
@@ -27,7 +28,7 @@ const Router = () => {
   };
 
   return (
-    <CartContext.Provider value={{ cart,setCart, handelAddToCart,counter,setCounter }}>
+    <CartContext.Provider value={{ cart,setCart, handelAddToCart,counter,setCounter,open,setOpen }}>
       <BrowserRouter>
         <Routes>
           <Route element={<LayOut />}>

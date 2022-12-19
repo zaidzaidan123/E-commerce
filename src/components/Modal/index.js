@@ -10,22 +10,29 @@ import NumbersButtons from "./NumbersButtons";
 import { Link } from "react-router-dom";
 import showProducts from "../../views/Data";
 import CartContext from "../../CartContext/CartContext";
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
 const Modal = ({ id, setStateModal, StateModal }) => {
   const cartIncrease = useContext(CartContext);
-
   const buttonsNumbers = [1, 2, 3, 4];
   const obj = showProducts[id - 1];
   const [indexBackGround, setIndexBackGround] = useState(0);
   const [pickPicture, setPicPicture] = useState(obj.images[0]);
   const [buttonCheck, setButtonCheck] = useState(0);
-  const [counter, setCounter] = useState(1);
   const handedIncreaseCounter = () => {
-    setCounter(counter + 1);
+    cartIncrease.setCounter(cartIncrease.counter + 1);
   };
   const handedDecreaseCounter = () => {
-    if (counter > 1) {
-      setCounter(counter - 1);
+    if (cartIncrease.counter > 1) {
+      cartIncrease.setCounter(cartIncrease.counter - 1);
     }
+  };
+  const handelCartIncrease = () => {
+    cartIncrease.handelAddToCart(obj);
+    cartIncrease.setOpen(true);
+  };
+  const handleClose = () => {
+    cartIncrease.setOpen(false);
   };
   const handelCloseModal = () => {
     setStateModal({
@@ -34,12 +41,18 @@ const Modal = ({ id, setStateModal, StateModal }) => {
       isShow: false,
     });
   };
-  const handelCartIncrease = () => {
-    cartIncrease.setCart(cartIncrease.cart + 1);
-  };
   return (
     <div>
       <ReactModal isOpen={handelCloseModal} className={Styles.modal}>
+      <Snackbar open={cartIncrease.open} autoHideDuration={6000} >
+          <Alert
+            onClose={handleClose}
+            severity="success"
+            sx={{ width: "100%" }}
+          >
+            add {cartIncrease.counter} products success
+          </Alert>
+        </Snackbar>
         <div className={Styles.header}>
           <h2 className={Styles.Title}>
             <BoldWords title={obj.title} />
@@ -129,7 +142,7 @@ const Modal = ({ id, setStateModal, StateModal }) => {
                 <button
                   className={Styles.buttonUnChecker + " " + Styles.counter}
                 >
-                  {counter}
+                  {cartIncrease.counter}
                 </button>
                 <button
                   className={Styles.buttonChecker + " " + Styles.counter}

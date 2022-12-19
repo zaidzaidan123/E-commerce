@@ -41,7 +41,7 @@ const Cart = () => {
                   {item.title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Amount = {item.count}
+                  Quantity = {item.count}
                 </Typography>
               </CardContent>
               <CardActions>
