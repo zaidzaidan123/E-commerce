@@ -30,6 +30,7 @@ const Modal = ({ id, setStateModal, StateModal }) => {
   const handelCartIncrease = () => {
     cartIncrease.handelAddToCart(obj);
     cartIncrease.setOpen(true);
+    cartIncrease.setCounter(1);
   };
   const handleClose = () => {
     cartIncrease.setOpen(false);
