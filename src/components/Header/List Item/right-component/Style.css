@@ -9,6 +9,10 @@
 }
 .cart-color{
   color: black;
+  text-decoration: none;
+}
+.cart-color:hover{
+  color: orange;
 }
 @media (max-width: 740px) {
   .right-div {

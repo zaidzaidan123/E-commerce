@@ -9,14 +9,13 @@
 .burgarOpen {
   display: none;
 }
-@media (max-width:740px) {
-  .burgarOpen{
+@media (max-width: 740px) {
+  .burgarOpen {
     display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  border-bottom: 1px solid grey;
-  text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid grey;
+    text-align: center;
   }
 }
-
