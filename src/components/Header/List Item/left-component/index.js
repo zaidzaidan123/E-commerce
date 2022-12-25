@@ -31,9 +31,9 @@ const LeftHeader = ({ openMenue, SetOpenMenue }) => {
     history("/");
   };
 
-  const pdpHandler=()=>{
-    history("/products")
-  }
+  const pdpHandler = () => {
+    history("/products");
+  };
   return (
     <div className="left-div">
       <div onClick={homeHandler} className="logo-change">

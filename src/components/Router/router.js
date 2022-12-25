@@ -50,22 +50,22 @@ const Router = () => {
             <Route path="/pdp/:id" element={<PDP />} />
             <Route path="/cart" element={<Cart />} />
             {!authCtx.isLoggedIn && (
-              <Route path="/login" element={<LogSign />} />
+              <Route path="login" element={<LogSign />} />
             )}
+            <Route
+              path="*"
+              element={
+                <div style={{ height: "100vh", overflow: "hidden" }}>
+                  <iframe
+                    src="https://embed.lottiefiles.com/animation/42479"
+                    height="100%"
+                    width="100%"
+                    title="Error"
+                  ></iframe>
+                </div>
+              }
+            />
           </Route>
-          <Route
-            path="*"
-            element={
-              <div style={{ height: "100vh", overflow: "hidden" }}>
-                <iframe
-                  src="https://embed.lottiefiles.com/animation/42479"
-                  height="100%"
-                  width="100%"
-                  title="Error"
-                ></iframe>
-              </div>
-            }
-          />
         </Routes>
       </BrowserRouter>
     </CartContext.Provider>

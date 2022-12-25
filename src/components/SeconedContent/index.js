@@ -1,25 +1,32 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Style from "./Style.module.css";
 import Box from "../Featured/Box";
 import NumbersButtons from "../Modal/NumbersButtons";
-const SecondContent = ({ data, filterData, setFilterData, check,setCheck ,setSelectOptions}) => {
+const SecondContent = ({
+  data,
+  filterData,
+  setFilterData,
+  check,
+  setCheck,
+  setSelectOptions,
+}) => {
   const [buttonCheck, setButtonCheck] = useState(0);
 
   let categoryData = [];
   let allData = data;
   data.map((item, index) => {
-    categoryData[index] = item.category;
+    return (categoryData[index] = item.category);
   });
 
   categoryData = [...new Set(categoryData)];
   function handelFilterProducts(item) {
-    setCheck(true)
+    setCheck(true);
     allData = data.filter((name) => name.category === item);
     setFilterData(allData);
-    setSelectOptions("")
+    setSelectOptions("");
   }
   const handelResetData = () => {
-    setCheck(false)
+    setCheck(false);
     setFilterData(data);
   };
   const buttonsNumbers = [1, 2, 3, 4];
